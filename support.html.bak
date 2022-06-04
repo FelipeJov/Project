@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Firga support</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <ul>
+                <li><a href="PCstore.html">Home</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li class="active"><a href ="support.html" class="active">Support</a></li>
+            </ul>
+            <br>
+            <h1>Welcome to Firga Technical Support</h1>
+            <hr>
+        </header>
+
+
+        <section class="main">
+            <h2>If you have a question or need help with our products, <br> you can contact us by calling 021/489-26-86.</h2>
+    </body>
+</html>

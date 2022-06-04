@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+	<br>
+	<head>
+		<meta charset="UTF8">
+		<title>PC store</title>
+		<link rel="shortcut icon" type="image/png" href="logo.png" />
+		<link rel="stylesheet" href="main.css">
+		
+		<script src="mainn.js"></script>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+			<ul>
+				<li class="active"><a href="PCstore.html" class="active">Home</a></li>
+				<li><a href="index.html">Buy</a></li>
+				<li><a href="location.html">Location</a></li>
+				<li><a href="support.html">Support</a></li>
+			</ul>
+			<hr>
+			<h1 class="title">PC store</h1>
+			<script>
+				var div=document.createElement("div");
+				div.id="div_id";
+				div.className="div_class";
+				div.style="background-color: #d15304; ";
+				div.style.width="200px";
+				div.style.height="40px";
+				div.innerHTML = User.First_name + " " + User.Last_name;
+
+				document.body.appendChild(div);
+			</script>
+
+			<p>Time: <span id="time"></span></p>
+			<p>Date: <span id="date"></span></p>
+
+			<script>
+				function updateTime() {
+					var currentTime = new Date()
+					var hours = currentTime.getHours()
+					var minutes = currentTime.getMinutes()
+
+					if (minutes < 10) {
+						minutes = "0" + minutes
+					}
+					var time = hours + ":" + minutes + " ";
+
+					document.getElementById('time').innerHTML = time;
+				}
+				setInterval(updateTime, 1000);
+
+				function updateDate() {
+					var currentDate = new Date()
+					var day = currentDate.getDay()
+					var month = currentDate.getMonth()
+					var year = currentDate.getFullYear();
+
+					if (day < 10) {
+						day = "0" + day;
+					}
+
+					if (month < 10) {
+						month = "0" + month;
+					}
+
+					var date = day + "/" + month + "/" + year;
+
+					document.getElementById('date').innerHTML = date;
+				}
+				setInterval(updateDate, 1000);
+			</script>
+			<br>
+		</header>
+			<section>
+				<div class="picture">
+					<img src="pc.jpg" width="325" height="245" class="picture">
+				</div>
+				<br>
+				<div class="info">
+					<p>Firga PC store</p>
+				</div>
+				<br>
+				<div class="pc">
+					<div class="newdiv">
+						<div class="newdiv">
+							<div class="newdiv">
+								<div style="position:relative">
+									<div style="float:left; width: 100px; height:200px; background-color:#008C45;">
+										<h3><span id="button" class="BUTTON">wow</span></h3>
+									</div>
+									<div style="float:left; width: 100px; height:200px; background-color:#FFFFFF;">
+										<h3>avmejsveb vfgjfbe bvhfvb jgh ghvgf f</h3>
+									</div>
+									<div style="float:left; width: 100px; height:200px; background-color:#CD212A;">
+										<h3><img src="pc.jpg" width="30" height="20" class="picture"></h3>
+									</div>
+								</div>
+							</div>
+							<div class="newdiv">
+								
+							</div>
+							<div class="newdiv">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+			</section>
+			<footer>
+				Novi Sad, Kisačka 35 | 021/489-26-96
+			</footer>
+	</body>
+</html>
